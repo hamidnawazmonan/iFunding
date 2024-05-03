@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--Navigation bar-->
+    <header>
+        <nav class="navbar navbar-expand-lg px-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="http://www.udledge.com/assets/img/product/funding_logo.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opportunity Insights</a></li>
+                    <li><a class="dropdown-item" href="#">Opportunity Influence</a></li>
+                    <li><a class="dropdown-item" href="#">Funding Trends Analysis</a></li>
+                    <li><a class="dropdown-item" href="#">Sponsor Overview</a></li>
+                    <li><a class="dropdown-item" href="#">Awarded Grant</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Worldwide</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opportunity Insights</a></li>
+                    <li><a class="dropdown-item" href="#">Opportunity Influence</a></li>
+                    <li><a class="dropdown-item" href="#">Funding Trends Analysis</a></li>
+                    <li><a class="dropdown-item" href="#">Sponsor Overview</a></li>
+                    <li><a class="dropdown-item" href="#">Awarded Grant</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Learning
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">News & Stories</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Opportunity Insights</a></li>
+                      <li><a class="dropdown-item" href="#">Opportunity Influence</a></li>
+                      <li><a class="dropdown-item" href="#">Funding Trends Analysis</a></li>
+                      <li><a class="dropdown-item" href="#">Sponsor Overview</a></li>
+                      <li><a class="dropdown-item" href="#">Awarded Grant</a></li>
+                    </ul>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+
+    <!--Search Database Section-->
+      <div class="search-database px-5 py-5">
+        <label for="exampleFormControlInput1" class="form-label">Search the Database</label>
+        <div class="input-group input-group-inline">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter search terms...">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="lower-text">
+            <div class="left-text">
+                <h3>28,593 results to 8,101 grantees</h3>
+                <p>between 2006 and 2024</p>
+            </div>
+            <div class="right-text">
+                <p>Have questions about the data shown?</p>
+                <a href="#">View the Grants Database FAQs</a>
+            </div>
+        </div>
+        <div class="filter-applied">
+          <div class="upper-bar">
+            <h5><span class="filter-count">1</span>FILTER APPLIED</h5>
+            <button class="clear-all-btn btn default" type="button">Clear <i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+          <div class="lower-bar">
+            <div class="search-result">
+              <button class="clear-one-btn btn default" type="button">SEARCH <i class="fa fa-times" aria-hidden="true"></i></button>
+              <p class="search-item">Food</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--Filter and Table Section-->
+      <div class="details">
+
+
+      <!--Filter (Left Side) -->
+        <div class="filter-side">
+          <h2 class="filter-results">Filter Resultes<span class="accordion-icon dropdown-toggle"></span></h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Topic
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Arts, culture and media (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Civic Participation (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Civil and Human Rights (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Education and Scholarship (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Fair Economies (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Government policy and practice (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          International affairs (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Other (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Philanthrophy (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Sexual and reproductive health and rights (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Technology (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Urban and rural land management (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <button class="applyButton" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Approval Date
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <label for="exampleFormControlInput1" class="form-label">From</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2006">
+                      <label for="exampleFormControlInput1" class="form-label">To</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2024">
+                      <button class="applyButton" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Program
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Civic Engagement and Government (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Creativity and Free Expression (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Disability Rights (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Future of Workers (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Gender, Racial and Ethnic Justice (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          International Cooperation (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Mission Investments (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Natural Resources and Climate Change (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Technology and Society (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Other Grantmaking (<span>9623</span>) 
+                        </label>
+                      </div>
+                      <button class="applyButton" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Funding Office
+                  </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Andean Region (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Brazil (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        China (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        East Africa (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        India, Nepal and Sri Lanka (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Indonesia (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mexico and Central America (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Middle East and North Africa (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Southern Africa (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        United States (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        West Africa (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <button class="applyButton" type="button">Apply</button>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Grantee
+                  </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <label for="exampleFormControlInput1" class="form-label">Enter Grantee Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <button class="applyButton" type="button">Apply</button>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Benefitting Location
+                  </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-parent="#accordionExample">
+                  <div class="accordion-body">  
+                    <label for="exampleFormControlInput1" class="form-label">Enter Grantee Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <button class="applyButton" type="button">Apply</button>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Amount
+                  </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <label for="exampleFormControlInput1" class="form-label">Minimum Value</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="$1">
+                      <label for="exampleFormControlInput1" class="form-label">Maximum Value</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="$125,000,000">
+                      <button class="applyButton" type="button">Apply</button>
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      Grant Type
+                  </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Build (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Regular (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Social Bond (<span>9623</span>) 
+                      </label>
+                    </div>
+                    <button class="applyButton" type="button">Apply</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- Table (Right Side) -->
+        <div class="table-side">
+          <table class="table" id="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Results</th>
+                <th scope="col" class="approval-date"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Approval date</a></th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+              <tr>
+                <td><h6 class="row-heading">Action for Hope<span class="approval-date">April 2024</span></h6><br><p class="description">General support towars the mission expansion to inclue leading a network of civil society actors working across sectorial silos for social justice in the global south</p></td>
+                <td class="approval-date">April 2024</td>
+                <td>$350,000</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <button class="arrow" id="prevPage" disabled><i class="fa fa-angle-left" aria-hidden="true"></i><span class="previous-text">Previous</span></button>
+            <div class="pages">
+                <div class="page-number active">1</div>
+                <div class="page-number">2</div>
+                <div class="page-number">3</div>
+                <div class="page-number">4</div>
+                <div class="page-number">5</div>
+            </div>
+            <button class="arrow" id="nextPage"><span class="next-text">Next</span><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        </div>
+      </div>
+
+<!-- Footer Section -->
+      <footer class="footer d-flex flex-wrap justify-content-between align-items-center px-5 py-3">
+        <div class="footer-leftside">
+          <div class="logo-side">
+              <a href="">
+                  <img src="http://www.udledge.com/assets/img/udl_logo.png" alt="">
+              </a>
+          </div>
+          <div class="text-side">
+            <div class="logo-heading">
+              <h4>Citations Index</h4>
+            </div>
+            <div class="logo-description">
+              <p>Journal Articles, Proceedings & Patents.</p>
+            </div>
+          </div>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">© UDLedge</li>
+            <li class="nav-item"><div class="vr"></div></li>
+            <li class="nav-item">Terms of Use & Privacy</li>
+            <li class="nav-item"><div class="vr"></div></li>
+            <li class="nav-item">Cookie Preferences</li>
+        </ul>
+      </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    
+    $(document).ready(function(){
+    $('.dropdown-toggle').on('click', function(){
+    // Close all dropdowns except the one clicked
+    $('.dropdown-menu').not($(this).next('.dropdown-menu')).hide();
+
+    // Toggle the dropdown menu
+    var $dropdownMenu = $(this).next('.dropdown-menu');
+    $dropdownMenu.toggle();
+
+    // Adjust the position of the dropdown menu to ensure it's fully visible within the viewport
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
+    var menuBottom = $dropdownMenu.offset().top + $dropdownMenu.outerHeight();
+    var menuRight = $dropdownMenu.offset().left + $dropdownMenu.outerWidth();
+    
+    if (menuBottom > windowHeight) {
+      $dropdownMenu.css('top', windowHeight - menuBottom);
+    } else {
+      $dropdownMenu.css('top', '');
+    }
+
+    if (menuRight > windowWidth) {
+      $dropdownMenu.css('left', windowWidth - menuRight);
+    } else {
+      $dropdownMenu.css('left', '');
+    }
+  });
+
+  // Close dropdown when clicking outside of it
+  $(document).on('click', function(event){
+    if (!$(event.target).closest('.dropdown').length) {
+      $('.dropdown-menu').hide();
+    }
+  });
+});
+$(document).ready(function() {
+    function toggleAccordion() {
+        var $accordion = $('.accordion');
+        var $accordionIcon = $('.accordion-icon');
+
+        // Toggle accordion and icon class
+        $accordion.toggleClass('open');
+        $accordionIcon.toggleClass('open');
+    }
+
+    // Initial behavior based on screen width
+    function initialAccordionBehavior() {
+        if ($(window).width() > 767) {
+            $('.accordion').addClass('open'); // Open accordion on larger screens
+        }
+        else{
+          $('.accordion').removeClass('open');
+        }
+    }
+
+    // Toggle accordion on click
+    $('.filter-results').click(function() {
+        toggleAccordion();
+    });
+
+    // Toggle accordion on tablets and mobiles
+    //if ($(window).width() <= 767) {
+      //  $('.filter-side h2').click(function() {
+        //    toggleAccordion();
+        //});
+
+    // Call initial behavior function
+    initialAccordionBehavior();
+
+    // Toggle accordion on window resize
+    $(window).resize(function() {
+        initialAccordionBehavior();
+    });
+});
+function toggleTableView() {
+    if ($(window).width() <= 767) {
+        $('#data-table .approval-date').hide();
+        $('#data-table .row-heading .approval-date').show();
+    } else {
+        $('#data-table .approval-date').show();
+        $('#data-table .row-heading .approval-date').hide();
+    }
+}
+
+$(document).ready(function() {
+    // Initial behavior
+    toggleTableView();
+
+    // Toggle view on window resize
+    $(window).resize(function() {
+        toggleTableView();
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById('exampleFormControlInput1');
+        const searchIcon = document.querySelector('.search-icon');
+        const filterAppliedDiv = document.querySelector('.filter-applied');
+        const filterCount = document.querySelector('.filter-count');
+        const searchResultsContainer = document.querySelector('.lower-bar');
+        const clearAllButton = document.querySelector('.clear-all-btn');
+
+        let searchTerms = [];
+
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                const searchTerm = searchInput.value.trim();
+                if (searchTerm !== '') {
+                    searchTerms.push(searchTerm);
+                    updateFilterDisplay();
+                    searchInput.value = '';
+                }
+            }
+        });
+
+        clearAllButton.addEventListener('click', function () {
+            searchTerms = [];
+            updateFilterDisplay();
+        });
+
+        function updateFilterDisplay() {
+            searchResultsContainer.innerHTML = '';
+            searchTerms.forEach(term => {
+                const searchResultDiv = document.createElement('div');
+                searchResultDiv.classList.add('search-result');
+                const clearOneButton = document.createElement('button');
+                clearOneButton.classList.add('clear-one-btn');
+                clearOneButton.type = 'button';
+                clearOneButton.innerHTML = `SEARCH <i class="fa fa-times" aria-hidden="true"></i>`;
+                clearOneButton.addEventListener('click', function () {
+                    searchTerms = searchTerms.filter(item => item !== term);
+                    updateFilterDisplay();
+                });
+                const searchTermP = document.createElement('p');
+                searchTermP.classList.add('search-item');
+                searchTermP.textContent = term;
+                searchResultDiv.appendChild(clearOneButton);
+                searchResultDiv.appendChild(searchTermP);
+                searchResultsContainer.appendChild(searchResultDiv);
+            });
+            const filterCountValue = searchTerms.length;
+            filterCount.textContent = filterCountValue;
+            if (filterCountValue > 0) {
+                filterAppliedDiv.classList.add('active');
+            } else {
+                filterAppliedDiv.classList.remove('active');
+            }
+        }
+
+        searchIcon.addEventListener('click', function () {
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm !== '') {
+                searchTerms.push(searchTerm);
+                updateFilterDisplay();
+                searchInput.value = '';
+            }
+        });
+    });
+
+
+  </script>
+  </body>
+</html>
